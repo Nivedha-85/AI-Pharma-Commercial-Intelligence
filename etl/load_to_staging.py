@@ -1,7 +1,17 @@
 import pandas as pd
 from config import engine
 
-df = pd.read_csv("../data/processed/cms_partd_clean.csv")
+df = pd.read_csv(
+    "../data/processed/cms_partd_clean.csv",
+    dtype={"prscrbr_state_fips": str},
+    low_memory=False
+)
+
+print(df.loc[
+    (df["prscrbr_city"] == "Victorville") &
+    (df["prscrbr_state_abrvtn"] == "CA"),
+    ["prscrbr_city", "prscrbr_state_abrvtn", "prscrbr_state_fips"]
+].drop_duplicates())
 
 print(f"Loaded {len(df)} rows from CSV.")
 
