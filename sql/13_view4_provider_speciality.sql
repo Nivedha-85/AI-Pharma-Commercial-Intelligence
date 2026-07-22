@@ -23,3 +23,6 @@ GROUP BY
 
 ORDER BY
     total_drug_cost DESC;
+
+
+SELECT * FROM reporting.vw_specialty_summary;

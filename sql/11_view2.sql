@@ -32,3 +32,6 @@ GROUP BY
     p.prscrbr_type,
     g.city,
     g.state_abbreviation;
+
+
+SELECT * FROM reporting.vw_top_prescribers;

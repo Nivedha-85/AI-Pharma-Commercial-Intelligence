@@ -25,3 +25,6 @@ GROUP BY
 
 ORDER BY
     ge65_total_drug_cost DESC;
+
+
+SELECT * FROM reporting.vw_ge65_summary;

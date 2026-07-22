@@ -23,5 +23,4 @@ GROUP BY
 
 
 SELECT *
-FROM reporting.vw_top_drugs
-LIMIT 10;
+FROM reporting.vw_top_drugs;

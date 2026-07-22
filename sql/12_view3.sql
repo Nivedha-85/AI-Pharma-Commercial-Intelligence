@@ -25,3 +25,6 @@ GROUP BY
 
 ORDER BY
     total_drug_cost DESC;
+
+
+SELECT * FROM reporting.vw_state_summary;
